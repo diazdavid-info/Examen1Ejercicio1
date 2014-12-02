@@ -13,10 +13,6 @@ public class Cola {
 		semaphoreQuitar = new Semaphore(0, true);
 	}
 	
-	public void accion(){
-		
-	}
-	
 	public void setString(String frase){
 		semaphorePoner.acquireUninterruptibly();
 		pingPong = frase;
